@@ -14,7 +14,5 @@
         }
     ],
     "theme_color": "#000000",
-    "background_color": "#000000",
-    "start_url": "https://anomalous.xyz",
-    "display": "standalone"
+    "background_color": "#000000"
 }
