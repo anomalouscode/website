@@ -1,7 +1,7 @@
 body {
     color: white;
     background-color: black;
-    font-family: 'ubuntu-regular';
+    font-family: "ubuntu-regular";
     text-align: center;
 }
 
@@ -25,12 +25,26 @@ body {
     font-size: 16px;
     margin: 4px 2px;
 }
-  
-.button1 {border-radius: 2px;}
-.button2 {border-radius: 4px;}
-.button3 {border-radius: 8px;}
-.button4 {border-radius: 12px;}
-.button5 {border-radius: 50%;}
+
+.button1 {
+    border-radius: 2px;
+}
+
+.button2 {
+    border-radius: 4px;
+}
+
+.button3 {
+    border-radius: 8px;
+}
+
+.button4 {
+    border-radius: 12px;
+}
+
+.button5 {
+    border-radius: 50%;
+}
 
 .button:hover {
     background-color: white;
