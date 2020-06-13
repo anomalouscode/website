@@ -108,14 +108,14 @@ body {
 }
 
 @keyframes rabbit {
-    0%   {left:500px; top:0px;}
-    15%  {left:450px; top:20px;}
-    25%  {left:400px; top:0px;}
-    35%  {left:350px; top:25px;}
-    45%  {left:250px; top:0px;}
-    55%  {left:200px; top:20px;}
-    65%  {left:150px; top:0px;}
-    75%  {left:100px; top:15px;}
-    85%  {left:50px; top:5px;}
-    100% {left:0px; top:0px;}
+    0%   {left:500px; top:0px;-webkit-transform: rotate(20deg);}
+    15%  {left:450px; top:20px;-webkit-transform: rotate(0deg);}
+    25%  {left:400px; top:0px;-webkit-transform: rotate(20deg);}
+    35%  {left:350px; top:25px;-webkit-transform: rotate(0deg);}
+    45%  {left:250px; top:0px;-webkit-transform: rotate(20deg);}
+    55%  {left:200px; top:20px;-webkit-transform: rotate(0deg);}
+    65%  {left:150px; top:0px;-webkit-transform: rotate(20deg);}
+    75%  {left:100px; top:15px;-webkit-transform: rotate(0deg);}
+    85%  {left:50px; top:10px;-webkit-transform: rotate(20deg);}
+    100% {left:0px; top:0px;-webkit-transform: rotate(0deg);}
   }
