@@ -58,6 +58,16 @@ body {
     color: black;
 }
 
+.rabbit{
+    width: 125px;
+    height: 125px;
+    left:0px;
+    position: relative;
+    animation-name: rabbit;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
 /* WRITER-SPECIFIC STYLES */
 
 .typewriter h1 {
@@ -73,6 +83,7 @@ body {
     /* Gives that scrolling effect as the typing happens */
     animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 }
+
 
 /* The typing effect */
 
@@ -95,3 +106,16 @@ body {
         border-color: green
     }
 }
+
+@keyframes rabbit {
+    0%   {left:500px; top:0px;}
+    15%  {left:450px; top:20px;}
+    25%  {left:400px; top:0px;}
+    35%  {left:350px; top:25px;}
+    45%  {left:250px; top:0px;}
+    55%  {left:200px; top:20px;}
+    65%  {left:150px; top:0px;}
+    75%  {left:100px; top:15px;}
+    85%  {left:50px; top:5px;}
+    100% {left:0px; top:0px;}
+  }
