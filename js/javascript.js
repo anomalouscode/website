@@ -3,7 +3,7 @@ var width = q.width = s.width;
 var height = q.height = s.height;
 var letters = Array(256).join(1).split('');
 
-var colors = ["#ff00ff", "#00ff72", "#aa0fe2"];
+var colors = ["#fc93bf", "#73fb98", "#aa0fe2"];
 var color = colors[Math.floor(Math.random() * colors.length)];
 var draw = function () {
 

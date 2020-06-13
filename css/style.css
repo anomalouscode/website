@@ -58,10 +58,10 @@ body {
     color: black;
 }
 
-.rabbit{
+.rabbit {
     width: 125px;
     height: 125px;
-    left:0px;
+    left: 0px;
     position: relative;
     animation-name: rabbit;
     animation-duration: 4s;
@@ -75,7 +75,7 @@ body {
     font-family: ubuntu-regular;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid green;
+    border-right: .15em solid #00FF00;
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
@@ -83,7 +83,6 @@ body {
     /* Gives that scrolling effect as the typing happens */
     animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 }
-
 
 /* The typing effect */
 
@@ -103,19 +102,64 @@ body {
         border-color: transparent
     }
     50% {
-        border-color: green
+        border-color: #00FF00
     }
 }
 
 @keyframes rabbit {
-    0%   {left:500px; top:0px;-webkit-transform: rotate(20deg);}
-    15%  {left:450px; top:20px;-webkit-transform: rotate(0deg);}
-    25%  {left:400px; top:0px;-webkit-transform: rotate(20deg);}
-    35%  {left:350px; top:25px;-webkit-transform: rotate(0deg);}
-    45%  {left:250px; top:0px;-webkit-transform: rotate(20deg);}
-    55%  {left:200px; top:20px;-webkit-transform: rotate(0deg);}
-    65%  {left:150px; top:0px;-webkit-transform: rotate(20deg);}
-    75%  {left:100px; top:15px;-webkit-transform: rotate(0deg);}
-    85%  {left:50px; top:10px;-webkit-transform: rotate(20deg);}
-    100% {left:0px; top:0px;-webkit-transform: rotate(0deg);}
-  }
+    0% {
+        left: 550px;
+        top: -5px;
+        -webkit-transform: rotate(0deg);
+    }
+    10% {
+        left: 500px;
+        top: -15px;
+        -webkit-transform: rotate(20deg);
+    }
+    20% {
+        left: 450px;
+        top: -5px;
+        -webkit-transform: rotate(0deg);
+    }
+    30% {
+        left: 400px;
+        top: -15px;
+        -webkit-transform: rotate(20deg);
+    }
+    40% {
+        left: 350px;
+        top: -5px;
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        left: 250px;
+        top: -15px;
+        -webkit-transform: rotate(20deg);
+    }
+    60% {
+        left: 200px;
+        top: -5px;
+        -webkit-transform: rotate(0deg);
+    }
+    70% {
+        left: 150px;
+        top: -15px;
+        -webkit-transform: rotate(20deg);
+    }
+    80% {
+        left: 100px;
+        top: -5px;
+        -webkit-transform: rotate(0deg);
+    }
+    90% {
+        left: 50px;
+        top: -15px;
+        -webkit-transform: rotate(20deg);
+    }
+    100% {
+        left: 0px;
+        top: -5px;
+        -webkit-transform: rotate(0deg);
+    }
+}
