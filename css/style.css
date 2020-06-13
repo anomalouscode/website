@@ -109,57 +109,57 @@ body {
 @keyframes rabbit {
     0% {
         left: 550px;
-        top: -5px;
+        top: 0px;
         -webkit-transform: rotate(0deg);
     }
     10% {
         left: 500px;
-        top: -15px;
+        top: -50px;
         -webkit-transform: rotate(20deg);
     }
     20% {
         left: 450px;
-        top: -5px;
+        top: 0px;
         -webkit-transform: rotate(0deg);
     }
     30% {
         left: 400px;
-        top: -15px;
+        top: -50px;
         -webkit-transform: rotate(20deg);
     }
     40% {
         left: 350px;
-        top: -5px;
+        top: 0px;
         -webkit-transform: rotate(0deg);
     }
     50% {
         left: 250px;
-        top: -15px;
+        top: -50px;
         -webkit-transform: rotate(20deg);
     }
     60% {
         left: 200px;
-        top: -5px;
+        top: 0px;
         -webkit-transform: rotate(0deg);
     }
     70% {
         left: 150px;
-        top: -15px;
+        top: -50px;
         -webkit-transform: rotate(20deg);
     }
     80% {
         left: 100px;
-        top: -5px;
+        top: 0px;
         -webkit-transform: rotate(0deg);
     }
     90% {
         left: 50px;
-        top: -15px;
+        top: -50px;
         -webkit-transform: rotate(20deg);
     }
     100% {
         left: 0px;
-        top: -5px;
+        top: 0px;
         -webkit-transform: rotate(0deg);
     }
 }
