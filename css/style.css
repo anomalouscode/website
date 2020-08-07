@@ -1,170 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
 body {
-    color: white;
-    background-color: black;
-    font-family: "ubuntu-regular";
-    text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+}
+
+body {
+  color: white;
+  background-color: black;
+  font-family: "ubuntu-regular";
+  text-align: center;
 }
 
 footer {
-    color: black;
-    font-size: 0px;
+  color: black;
+  font-size: 0px;
 }
 
 .center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .button {
-    background-color: black;
-    border: solid;
-    border-color: white;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+  background-color: black;
+  border: solid;
+  border-color: white;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
 }
 
 .button1 {
-    border-radius: 2px;
+  border-radius: 2px;
 }
 
 .button2 {
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 .button3 {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .button4 {
-    border-radius: 12px;
+  border-radius: 12px;
 }
 
 .button5 {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .redpill:hover {
-    background-color: red;
-    border-color: black;
-    color: black;
+  background-color: red;
+  border-color: black;
+  color: black;
 }
 
 .bluepill:hover {
-    background-color: blue;
-    border-color: black;
-    color: black;
+  background-color: blue;
+  border-color: black;
+  color: black;
 }
 
 .rabbit {
-    width: 125px;
-    height: 125px;
-    left: 0px;
-    position: relative;
-    animation-name: rabbit;
-    animation-duration: 4s;
-    animation-delay: 0s;
+  width: 125px;
+  height: 125px;
+  left: 0px;
+  position: relative;
+  animation-name: rabbit;
+  animation-duration: 4s;
+  animation-delay: 0s;
 }
 
 /* WRITER-SPECIFIC STYLES */
 
 .typewriter h1 {
-    color: #fff;
-    font-family: ubuntu-regular;
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #00FF00;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+  color: #fff;
+  font-family: ubuntu-regular;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #00ff00;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
 
 @keyframes typing {
-    from {
-        width: 0
-    }
-    to {
-        width: 100%
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 
 @keyframes blink-caret {
-    from, to {
-        border-color: transparent
-    }
-    50% {
-        border-color: #00FF00
-    }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00ff00;
+  }
 }
 
 @keyframes rabbit {
-    0% {
-        left: 550px;
-        top: 0px;
-        -webkit-transform: rotate(0deg);
-    }
-    10% {
-        left: 500px;
-        top: -50px;
-        -webkit-transform: rotate(20deg);
-    }
-    20% {
-        left: 450px;
-        top: 0px;
-        -webkit-transform: rotate(0deg);
-    }
-    30% {
-        left: 400px;
-        top: -50px;
-        -webkit-transform: rotate(20deg);
-    }
-    40% {
-        left: 350px;
-        top: 0px;
-        -webkit-transform: rotate(0deg);
-    }
-    50% {
-        left: 250px;
-        top: -50px;
-        -webkit-transform: rotate(20deg);
-    }
-    60% {
-        left: 200px;
-        top: 0px;
-        -webkit-transform: rotate(0deg);
-    }
-    70% {
-        left: 150px;
-        top: -50px;
-        -webkit-transform: rotate(20deg);
-    }
-    80% {
-        left: 100px;
-        top: 0px;
-        -webkit-transform: rotate(0deg);
-    }
-    90% {
-        left: 50px;
-        top: -50px;
-        -webkit-transform: rotate(20deg);
-    }
-    100% {
-        left: 0px;
-        top: 0px;
-        -webkit-transform: rotate(0deg);
-    }
+  0% {
+    left: 550px;
+    top: 0px;
+    -webkit-transform: rotate(0deg);
+  }
+  10% {
+    left: 500px;
+    top: -50px;
+    -webkit-transform: rotate(20deg);
+  }
+  20% {
+    left: 450px;
+    top: 0px;
+    -webkit-transform: rotate(0deg);
+  }
+  30% {
+    left: 400px;
+    top: -50px;
+    -webkit-transform: rotate(20deg);
+  }
+  40% {
+    left: 350px;
+    top: 0px;
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    left: 250px;
+    top: -50px;
+    -webkit-transform: rotate(20deg);
+  }
+  60% {
+    left: 200px;
+    top: 0px;
+    -webkit-transform: rotate(0deg);
+  }
+  70% {
+    left: 150px;
+    top: -50px;
+    -webkit-transform: rotate(20deg);
+  }
+  80% {
+    left: 100px;
+    top: 0px;
+    -webkit-transform: rotate(0deg);
+  }
+  90% {
+    left: 50px;
+    top: -50px;
+    -webkit-transform: rotate(20deg);
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    -webkit-transform: rotate(0deg);
+  }
 }
