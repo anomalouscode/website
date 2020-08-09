@@ -25,5 +25,5 @@ window.addEventListener('load', () => {
         });
     };
 
-    setInterval(drawCanvas, 50);
+    setInterval(drawCanvas, 45);
 });
