@@ -4,10 +4,16 @@ window.addEventListener('load', () => {
     const letters = Array(256).join(1).split('');
     const colors = ['#fc93bf', '#73fb98', '#9c56c3'];
 
-    canvas.width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.995;
-    canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    const resizeCanvas = () => {
+        canvas.width = canvas.clientWidth;
+        canvas.height = canvas.clientHeight;
+    };
 
-    const draw = () => {
+    resizeCanvas();
+
+    window.onresize = resizeCanvas;
+
+    const drawCanvas = () => {
         context.fillStyle = 'rgba(0,0,0,.05)';
         context.fillRect(0, 0, canvas.width, canvas.height);
         context.fillStyle = colors[Math.floor(Math.random() * colors.length)];
@@ -19,12 +25,5 @@ window.addEventListener('load', () => {
         });
     };
 
-    setInterval(draw, 50);
-
-    const resizeCanvas = () => {
-        canvas.width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.995;
-        canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    }
-
-    window.onresize = resizeCanvas;
+    setInterval(drawCanvas, 50);
 });
