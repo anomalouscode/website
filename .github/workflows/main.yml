@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: ls -la
       - uses: aquiladev/ipfs-action@v0.1.5
         with:
           path: ./
