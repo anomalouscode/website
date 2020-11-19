@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: anomalous.xyz
-Token: 3ce6b29ab09c42c1072075bdb28170dda773eeb97d415d9e6f181e7355b43cbb
