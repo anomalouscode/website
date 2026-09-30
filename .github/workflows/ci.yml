@@ -27,3 +27,5 @@ jobs:
           node-version: "24"
       - name: Validate HTML, JavaScript and local assets
         run: python .github/scripts/validate-static.py .
+      - name: Test static validation regressions
+        run: python .github/scripts/test-validate-static.py
